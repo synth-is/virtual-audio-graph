@@ -23,8 +23,13 @@ const createAudioNode = (
     : audioContext[func]()
 
   if (startAndStopNodes.indexOf(name) !== -1) {
-    if (startTime == null) audioNode.start(audioContext.currentTime, offsetTime)
-    else audioNode.start(startTime, offsetTime)
+    if( "bufferSource" === name ) {
+      if (startTime == null) audioNode.start(audioContext.currentTime, offsetTime)
+      else audioNode.start(startTime, offsetTime)
+    } else { // oscillator
+      if (startTime == null) audioNode.start(audioContext.currentTime)
+      else audioNode.start(startTime)
+    }
     if (stopTime != null) audioNode.stop(stopTime)
   }
   return audioNode
