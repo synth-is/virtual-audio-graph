@@ -1,5 +1,4 @@
 *.log
 .esm-cache
-dist
 esm
 node_modules
