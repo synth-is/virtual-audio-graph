@@ -74,6 +74,7 @@ var constructorParamsKeys = [
     'mediaElement',
     'mediaStream',
     'numberOfOutputs',
+    'numberOfInputs'
 ];
 var setters = [
     'position',

@@ -19,6 +19,7 @@ export const constructorParamsKeys = [
   'mediaElement',
   'mediaStream',
   'numberOfOutputs',
+  'numberOfInputs'
 ]
 
 export const setters = [

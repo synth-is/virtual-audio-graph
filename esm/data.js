@@ -18,6 +18,7 @@ export var constructorParamsKeys = [
     'mediaElement',
     'mediaStream',
     'numberOfOutputs',
+    'numberOfInputs'
 ];
 export var setters = [
     'position',
