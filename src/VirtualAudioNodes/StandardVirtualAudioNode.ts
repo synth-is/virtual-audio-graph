@@ -32,6 +32,8 @@ const createAudioNode = (
     }
     if (stopTime != null) audioNode.stop(stopTime)
   }
+  // https://github.com/ircam-ismm/node-web-audio-api/issues/29
+  audioNode.channelInterpretation = 'discrete';
   return audioNode
 }
 
